@@ -33,7 +33,7 @@ public abstract class Animal {
         return lastAte;
     }
 
-    public void setAge (int lastAte) {
+    public void setAge (int age) {
         this.age = age;
     }
 
