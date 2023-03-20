@@ -17,8 +17,8 @@ public abstract class Animal {
     public String reproduce (Animal parent) {
         return "The animal is having a baby";
     }
-    public void sleep (int sleeping) throws Exception {
-        this.wait(sleeping);
+    public void sleep (int sleeping){
+
     }
 
     public String pooping () {
