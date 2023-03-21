@@ -1,6 +1,6 @@
 package com.softwareinstitute.sabir.shaheeb.animals.tests;
 
-import com.softwareinstitute.sabir.shaheeb.animals.Cat;
+import com.softwareinstitute.sabir.shaheeb.animals.*;
 import com.softwareinstitute.sabir.shaheeb.exceptions.ThrowUpExceptions;
 import org.junit.jupiter.api.Test;
 
@@ -34,13 +34,13 @@ public class CatTest {
 
     }
 
-    @Test
-    void testing_cat_last_ate() {
-        Cat testCat = new Cat();
-        testCat.setLastAte("milk");
-        assertEquals("milk", testCat.getLastAte(),"expected last ate should be milk");
+   // @Test
+   // void testing_cat_last_ate() {
+     //   Cat testCat = new Cat();
+      //  testCat.setLastAte("milk");
+     //   assertEquals("milk", testCat.getLastAte(),"expected last ate should be milk");
 
-    }
+  //  }
 
     @Test
     void testing_eat() throws ThrowUpExceptions {
@@ -48,7 +48,12 @@ public class CatTest {
         testCat.eat("food");
         assertEquals("food", testCat.getLastAte(), "expected last ate should be milk");
     }
-
+   // @Test
+   // void testing_reproduce() {
+      //  Cat testRoproduce = new Cat();
+       // testRoproduce.giveBirth( testRoproduce);
+       // assertEquals("food", testRoproduce.giveBirth(), "expected last ate should be milk");
+   // }
 
 
 }

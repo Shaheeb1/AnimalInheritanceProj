@@ -6,4 +6,8 @@ public class Cat extends Mammal {
         this.lastAte = food;
 
     }
+
+    public String giveBirth(Mammal parent ) {
+        return "I gave birth to " + parent.getClass();
+    }
 }
