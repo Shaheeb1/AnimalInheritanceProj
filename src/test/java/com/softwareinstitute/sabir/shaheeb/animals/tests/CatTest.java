@@ -48,12 +48,13 @@ public class CatTest {
         testCat.eat("food");
         assertEquals("food", testCat.getLastAte(), "expected last ate should be milk");
     }
-   // @Test
-   // void testing_reproduce() {
-      //  Cat testRoproduce = new Cat();
-       // testRoproduce.giveBirth( testRoproduce);
-       // assertEquals("food", testRoproduce.giveBirth(), "expected last ate should be milk");
-   // }
+    @Test
+    void testing_reproduce() {
+     Cat catBirth = new Cat();
+     catBirth.giveBirth("Thomas", "Black");
+    // assertEquals("Thomas", catBirth.getName(), "Black", catBirth.getColour(), "Expected name is thomas");
+    // assertEquals("Black", catBirth.getColour(), "Expected name is thomas");
+    }
 
 
 }

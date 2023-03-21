@@ -7,7 +7,7 @@ public class Cat extends Mammal {
 
     }
 
-    public String giveBirth(Mammal parent ) {
-        return "I gave birth to " + parent.getClass();
+    public String giveBirth(String name, String colour ) {
+        return "I gave birth to ";
     }
 }
