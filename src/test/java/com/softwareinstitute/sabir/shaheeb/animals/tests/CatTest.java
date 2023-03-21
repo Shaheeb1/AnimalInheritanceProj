@@ -1,6 +1,7 @@
 package com.softwareinstitute.sabir.shaheeb.animals.tests;
 
 import com.softwareinstitute.sabir.shaheeb.animals.Cat;
+import com.softwareinstitute.sabir.shaheeb.exceptions.ThrowUpExceptions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -39,6 +40,13 @@ public class CatTest {
         testCat.setLastAte("milk");
         assertEquals("milk", testCat.getLastAte(),"expected last ate should be milk");
 
+    }
+
+    @Test
+    void testing_eat() throws ThrowUpExceptions {
+        Cat testCat = new Cat();
+        testCat.eat("food");
+        assertEquals("food", testCat.getLastAte(), "expected last ate should be milk");
     }
 
 
