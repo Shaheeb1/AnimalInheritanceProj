@@ -7,6 +7,8 @@ public abstract class Animal {
     protected String lastAte;
     private int age;
     private String name;
+    protected boolean isAlive;
+    protected boolean isSleep;
 
     public Animal() {
         super();
@@ -58,6 +60,22 @@ public abstract class Animal {
 
     public String getName() {
         return name;
+    }
+
+    public boolean getAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean isAlive) {
+        this.isAlive = isAlive;
+    }
+
+    public boolean getAsleep() {
+        return isSleep;
+    }
+
+    public void setAsleep(boolean sleep) {
+        this.isSleep = sleep;
     }
 
     @Override public String toString() {

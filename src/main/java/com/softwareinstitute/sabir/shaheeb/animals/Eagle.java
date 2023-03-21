@@ -5,8 +5,8 @@ public class Eagle extends Bird {
         this.lastAte = food;
     }
 
-    public String dead (String dead) {
-        return "The eagle has passed";
+    public boolean alive (boolean isAlive) {
+           return this.isAlive = isAlive;
     }
 
 }
