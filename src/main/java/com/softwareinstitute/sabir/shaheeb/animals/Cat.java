@@ -7,7 +7,8 @@ public class Cat extends Mammal {
 
     }
 
-    public String giveBirth(String name, String colour ) {
-        return "I gave birth to ";
+    public void giveBirth(String parent, String colour ) {
+       // this.a = parent;
+        this.colour = colour;
     }
 }

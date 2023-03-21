@@ -3,12 +3,14 @@ package com.softwareinstitute.sabir.shaheeb.animals;
 import com.softwareinstitute.sabir.shaheeb.exceptions.ThrowUpExceptions;
 
 public abstract class Animal {
-    private String colour;
+    protected String colour;
     protected String lastAte;
-    private int age;
-    private String name;
+    protected int age;
+    protected String name;
     protected boolean isAlive;
     protected boolean isSleep;
+
+    protected Cat a;
 
     public Animal() {
         super();
@@ -76,6 +78,14 @@ public abstract class Animal {
 
     public void setAsleep(boolean sleep) {
         this.isSleep = sleep;
+    }
+
+    public Animal getCat () {
+        return a;
+    }
+
+    public void setCat(Animal cat) {
+        cat = a;
     }
 
     @Override public String toString() {

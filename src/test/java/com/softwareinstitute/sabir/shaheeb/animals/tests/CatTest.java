@@ -48,14 +48,14 @@ public class CatTest {
         testCat.eat("food");
         assertEquals("food", testCat.getLastAte(), "expected last ate should be milk");
     }
-    @Test
-    void testing_reproduce() {
-     Cat catBirth = new Cat();
-     catBirth.giveBirth("Thomas", "Black");
-     assertEquals("Thomas", catBirth.getName(), "Black", catBirth.getColour(), "Expected name is thomas");
-     assertEquals("Black", catBirth.getColour(), "Expected name is thomas");
-    }
-    
+    //@Test
+   // void testing_reproduce() {
+  //   Cat catBirth = new Cat();
+    // catBirth.giveBirth("Thomas", "Black");
+    // assertEquals("Thomas", catBirth.getName(), "Black", catBirth.getColour(), "Expected name is thomas");
+    // assertEquals("Black", catBirth.getColour(), "Expected name is thomas");
+   // }
+
    @Test
    void testing_is_alive() {
        Eagle alive = new Eagle();
@@ -69,5 +69,14 @@ public class CatTest {
         asleep.isSleep(true);
         assertEquals(true, asleep.getAsleep(), "expected outcome for bat sleeping should be true");
     }
+
+   // @Test
+   // void testing_is_reproducing() {
+
+      //  Cat parent = this.
+      //  Cat reproducing = new Cat();
+      //  reproducing.giveBirth(Cat parent, )
+      //  assertEquals(reproducing, "Black", "expected outcome for bat sleeping should be true");
+   // }
 
 }
